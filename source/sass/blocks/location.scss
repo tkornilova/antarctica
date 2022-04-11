@@ -1,0 +1,132 @@
+.location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding: 120px 20px 120px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    min-width: 678px;
+    padding: 73px 45px 100px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-width: 290px;
+    flex-direction: column;
+    padding: 56px 0 73px;
+  }
+}
+
+.location iframe {
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 306px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    width: 324px;
+    height: 335px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+    height: 316px;
+    order: 2;
+  }
+}
+
+.location div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: $desktop-width) {
+    width: 500px;
+    height: 142px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    width: 324px;
+    height: 191px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+    height: 214px;
+    padding-bottom: 43px;
+  }
+}
+
+.location__catption {
+  color: $main-blue;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  padding-bottom: 24px;
+  margin: 0;
+
+  @media (max-width: $tablet-width-only) {
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 250px;
+    padding-bottom: 28px;
+  }
+}
+
+.location__adress {
+  color: $main-blue;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  padding-bottom: 21px;
+  padding-left: 29px;
+  margin: 0;
+  position: relative;
+
+  @media (max-width: $tablet-width-only) {
+    padding-left: 33px;
+  }
+}
+
+.location__adress::before {
+  content: "";
+  background-image: url("../../img/icon-adress.png");
+  background-position: 0 0;
+  width: 18px;
+  height: 22px;
+  position: absolute;
+  left: 0;
+}
+
+.location__phone {
+  color: $main-blue;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 25px;
+  margin: 0;
+  position: relative;
+
+  @media (max-width: $tablet-width-only) {
+    padding-left: 33px;
+  }
+}
+
+.location__phone::before {
+  content: "";
+  background-image: url("../../img/icon-phone.png");
+  background-position: 0 0;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+}

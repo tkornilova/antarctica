@@ -1,0 +1,28 @@
+// Vendor
+// ---------------------------------
+
+@import "vendor/normalize";
+// Swiper 7.4.1
+// @import "vendor/swiper";
+
+// Global
+// ---------------------------------
+
+@import "variables";
+@import "global/fonts";
+@import "global/utils";
+
+// Blocks
+// ---------------------------------
+
+@import "blocks/advantages.scss";
+@import "blocks/body.scss";
+@import "blocks/booking.scss";
+@import "blocks/cruises.scss";
+@import "blocks/location.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/site-description.scss";
+@import "blocks/welcome-caption.scss";
+
+// ---------------------------------

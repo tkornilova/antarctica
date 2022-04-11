@@ -1,0 +1,88 @@
+.welcome-caption {
+  width: 100%;
+  background-image: url("../../img/welcome-background.jpg");
+  background-color: $dark-blue-background;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (min-width: $desktop-width) {
+    height: 636px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    height: 638px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height: 500px;
+  }
+}
+
+.welcome-caption__wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    width: 966px;
+    padding: 271px 0 0;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    min-width: 678px;
+    padding: 268px 50px 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-width: 290px;
+    padding: 176px 15px 0;
+  }
+}
+
+.welcome-caption h2 {
+  color: $white;
+  font-weight: 700;
+  text-align: start;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 54px;
+    line-height: 66px;
+    padding-bottom: 12px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 50px;
+    line-height: 61px;
+    padding-bottom: 12px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 36px;
+    line-height: 125%;
+    padding-bottom: 10px;
+
+  }
+}
+
+.welcome-caption p {
+  color: $white;
+  font-weight: 400;
+  text-align: start;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 16px;
+    line-height: 140%;
+  }
+}

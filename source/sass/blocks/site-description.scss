@@ -1,0 +1,115 @@
+.site-description {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    padding: 133px 20px 120px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    min-width: 678px;
+    padding: 90px 45px 80px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-width: 290px;
+    padding: 56px 15px 65px;
+  }
+}
+
+.site-description__wrapper {
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    width: 324px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+    padding-bottom: 34px;
+  }
+}
+
+.site-description__wrapper h2 {
+  color: $main-blue;
+  font-weight: 600;
+  margin: 0;
+  text-align: start;
+  box-sizing: border-box;
+
+  @media (min-width: $desktop-width) {
+    font-size: 28px;
+    line-height: 150%;
+    padding-bottom: 23px;
+    width: 469px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 26px;
+    line-height: 140%;
+    padding-bottom: 30px;
+    width: 250px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 24px;
+    line-height: 140%;
+    padding-bottom: 16px;
+  }
+}
+
+.site-description__wrapper p {
+  color: $main-blue;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  text-align: start;
+  font-size: 16px;
+  line-height: 150%;
+
+  @media (min-width: $desktop-width) {
+    width: 469px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    width: 285px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 256px;
+  }
+}
+
+.site-description__picture {
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 560px;
+    height: 301px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    width: 324px;
+    height: 264px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+    height: 186px;
+  }
+}

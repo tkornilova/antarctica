@@ -1,0 +1,236 @@
+.booking {
+  width: 100%;
+  background-image: url("../../img/booking-background.jpg");
+  background-color: $light-blue-background;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    height: 555px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    height: 810px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    height: 760px;
+  }
+}
+
+.booking__wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    width: 1040px;
+    padding: 50px 0 50px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    flex-direction: column;
+    width: 430px;
+    padding: 63px 0 100px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    flex-direction: column;
+    width: 290px;
+    padding: 59px 0 65px;
+  }
+}
+
+.booking__caption {
+  @media (min-width: $desktop-width) {
+    width: 500px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    width: 420px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 257px;
+  }
+}
+
+.booking__caption h2 {
+  color: $main-blue;
+  font-weight: 700;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 150%;
+    padding: 0;
+    text-align: start;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 34px;
+    line-height: 150%;
+    padding: 0 0 5px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 24px;
+    line-height: 130%;
+    padding: 0 0 13px;
+    text-align: center;
+  }
+}
+
+.booking__caption p {
+  color: $main-blue;
+  font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: start;
+    padding: 0;
+    width: 350px;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    padding: 0 0 53px;
+    width: 320px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    padding: 0 0 31px;
+    width: 186px;
+  }
+}
+
+.booking__form {
+  background-color: $main-blue;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 403px;
+  height: 455px;
+  padding: 43px 50px 50px;
+  box-sizing: border-box;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+    height: 460px;
+    padding: 35px 30px 40px;
+  }
+}
+
+.booking__form p {
+  font-size: 18px;
+  line-height: 150%;
+  padding: 0 0 28px;
+  margin: 0 auto;
+  text-align: start;
+
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+  }
+}
+
+.booking__form input {
+  background-color: $white;
+  height: 43px;
+  padding: 11px 16px;
+  box-sizing: border-box;
+  width: 303px;
+  margin: 0 auto 20px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 230px;
+  }
+}
+
+.booking__form button {
+  width: 303px;
+  height: 43px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+
+  @media (max-width: $mobile-width-only) {
+    width: 230px;
+    height: 43px;
+  }
+}
+
+.booking__form-label {
+  font-weight: 400;
+  color: $white;
+  font-size: 10px;
+  line-height: 130%;
+  margin-left: -6px;
+  margin-bottom: 34px;
+  position: relative;
+
+  @media (max-width: $mobile-width-only) {
+    margin-left: 29px;
+    margin-bottom: 24px;
+  }
+
+  &::before {
+    content: url("../../img/icon-empty.png");
+    width: 18px;
+    height: 18px;
+    left: -24px;
+    bottom: -3px;
+    position: absolute;
+
+    @media (max-width: $mobile-width-only) {
+      left: -28px;
+      bottom: 5px;
+    }
+  }
+}
+
+.booking__form-data:checked + .booking__form-label::before {
+  content: url("../../img/icon-checked.png");
+  width: 18px;
+  height: 18px;
+  left: -30px;
+  bottom: -2px;
+  position: absolute;
+}
+
+.booking__form-name,
+.booking__form-phone,
+.booking__form-email {
+  background-color: $white;
+  width: 303px;
+  height: 43px;
+  border: none;
+  padding: 11px 16px;
+  box-sizing: border-box;
+  margin: 0 auto 20px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 230px;
+  }
+}
