@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Круизы по Антарктике">
     <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/montserrat-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -35,16 +36,16 @@
         </div>
         <ul class="page-header__list">
           <li class="page-header__item">
-            <a href="#" aria-label="Переход на вкладку преимущества">Преимущества</a>
+            <a href="#advantages" aria-label="Переход на вкладку преимущества">Преимущества</a>
           </li>
           <li class="page-header__item">
-            <a href="#" aria-label="Переход на вкладку направления">Направления</a>
+            <a href="#directions" aria-label="Переход на вкладку направления">Направления</a>
           </li>
           <li class="page-header__item">
-            <a href="#" aria-label="Переход на вкладку ближайшие круизы">Ближайшие круизы</a>
+            <a href="#cruises" aria-label="Переход на вкладку ближайшие круизы">Ближайшие круизы</a>
           </li>
           <li class="page-header__item">
-            <a href="#" aria-label="Переход на вкладку контакты">Контакты</a>
+            <a href="#contacts" aria-label="Переход на вкладку контакты">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -65,7 +66,7 @@
         </div>
         <img class="site-description__picture" src="img/main-picture.jpg" alt="Фотография пингвинов" width="560" height="301">
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <h2>Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -91,7 +92,10 @@
           </li>
         </ul>
       </section>
-      <section class="cruises">
+      <section>
+        <h2 class="visually-hidden" id="directions">Направления</h2>
+      </section>
+      <section class="cruises" id="cruises">
         <h2>Ближайшие круизы</h2>
         <ul class="cruises__list">
           <li class="cruises__item">
@@ -318,7 +322,7 @@
       </section>
     </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" id="contacts">
         <div class="page-footer__wrapper">
           <ul class="page-footer__list-contact">
             <li class="page-footer__item-contact">
@@ -366,7 +370,7 @@
           </ul>
         </div>
       </footer>
-
-      <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

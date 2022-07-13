@@ -1,16 +1,16 @@
 // Vendor
 // ---------------------------------
 
-@import "vendor/normalize";
+@import "vendor/normalize.scss";
 // Swiper 7.4.1
 // @import "vendor/swiper";
 
 // Global
 // ---------------------------------
 
-@import "variables";
-@import "global/fonts";
-@import "global/utils";
+@import "variables.scss";
+@import "global/fonts.scss";
+@import "global/utils.scss";
 
 // Blocks
 // ---------------------------------

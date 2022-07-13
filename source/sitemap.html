@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Круизы по Антарктике">
     <title>Круизы в Антарктику</title>
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="preload" href="fonts/montserrat-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicons/favicon.ico">
   </head>
   <body>
     <header class="page-header page-header-no-js">
@@ -18,16 +19,16 @@
       <nav class="page-header__wrapper">
         <div>
           <a href="#" aria-label="Переход на главную страницу">
-            <svg width="70" height="38" role="img">
+            <svg class="page-header__logo" width="70" height="38" role="img">
               <use xlink:href="img/sprite.svg#logo"></use>
             </svg>
           </a>
-          <button class="page-header__button-open">
+          <button class="page-header__button-open  visually-hidden">
             <svg width="24" height="12" role="img">
               <use xlink:href="img/sprite.svg#burger-menu"></use>
             </svg>
           </button>
-          <button class="page-header__button-close visually-hidden">
+          <button class="page-header__button-close">
             <svg width="13" height="13" role="img">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
@@ -35,37 +36,41 @@
         </div>
         <ul class="page-header__list">
           <li class="page-header__item">
-            <a href="#" aria-label="Переход на вкладку преимущества">Преимущества</a>
+            <a href="#advantages" aria-label="Переход на вкладку преимущества">Преимущества</a>
           </li>
           <li class="page-header__item">
-            <a href="#" aria-label="Переход на вкладку направления">Направления</a>
+            <a href="#directions" aria-label="Переход на вкладку направления">Направления</a>
           </li>
           <li class="page-header__item">
-            <a href="#" aria-label="Переход на вкладку ближайшие круизы">Ближайшие круизы</a>
+            <a href="#cruises" aria-label="Переход на вкладку ближайшие круизы">Ближайшие круизы</a>
           </li>
           <li class="page-header__item">
-            <a href="#" aria-label="Переход на вкладку контакты">Контакты</a>
+            <a href="#contacts" aria-label="Переход на вкладку контакты">Контакты</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Сайт круизах в Антарктику</h1>
+      <h1 class="visually-hidden">Сайт круизах в&nbsp;Антарктику</h1>
       <section class="welcome-caption">
         <div class="welcome-caption__wrapper">
-          <h2>Круизы в Антарктику</h2>
-          <p>Волшебный мир айсбергов и пингвинов</p>
+          <h2>Круизы в&nbsp;Антарктику</h2>
+          <p>Волшебный мир айсбергов и&nbsp;пингвинов</p>
         </div>
       </section>
       <section class="site-description">
         <div class="site-description__wrapper">
-          <h2>Путешествие на край Земли</h2>
-          <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный лайнер отвезет вас на край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+          <h2>Путешествие на&nbsp;край Земли</h2>
+          <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
         </div>
-        <img class="site-description__picture" src="img/main-picture.jpg" alt="Фотография пингвинов" width="560" height="301">
+        <picture class="site-description__picture-wrapper">
+          <source class="site-description__picture" media="(max-width: 767px)" srcset="img/main-picture-mobile.jpg">
+          <source class="site-description__picture" media="(max-width: 1023px)" srcset="img/main-picture-tablet.jpg">
+          <img class="site-description__picture" src="img/main-picture-desktop.jpg" alt="Фотография пингвинов" width="560" height="301">
+        </picture>
       </section>
-      <section class="advantages">
+      <section class="advantages" id="advantages">
         <h2>Преимущества</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
@@ -73,25 +78,28 @@
               <use xlink:href="img/sprite.svg#ship"></use>
             </svg>
             <h3>Небольшой круизный лайнер</h3>
-            <p>Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
+            <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300 гостей, поможет избежать шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
           </li>
           <li class="advantages__item">
             <svg width="38" height="21" role="img">
               <use xlink:href="img/sprite.svg#check"></use>
             </svg>
             <h3>Система все включено</h3>
-            <p>Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
+            <p>Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда и&nbsp;безлимитный бар доступны для вас 24 часа.</p>
           </li>
           <li class="advantages__item">
             <svg width="42" height="15" role="img">
               <use xlink:href="img/sprite.svg#yacht"></use>
             </svg>
-            <h3>Экскурсионные туры на Zodiac</h3>
-            <p>Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.</p>
+            <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+            <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac в&nbsp;сопровождении опытных экскурсоводов.</p>
           </li>
         </ul>
       </section>
-      <section class="cruises">
+      <section>
+        <h2 class="visually-hidden" id="directions">Направления</h2>
+      </section>
+      <section class="cruises" id="cruises">
         <h2>Ближайшие круизы</h2>
         <ul class="cruises__list">
           <li class="cruises__item">
@@ -292,33 +300,33 @@
         <div class="booking__wrapper">
           <div class="booking__caption">
             <h2>Раннее бронирование</h2>
-            <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
+            <p>Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
-          <div class="booking__form">
-            <p>Оставьте заявку и мы свяжемся с вами в ближайшее время</p>
+          <form class="booking__form" id="form" name="form" method="post" action="https://echo.htmlacademy.ru">
+            <p>Оставьте заявку и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
             <label for="name" class="visually-hidden">Имя</label>
-            <input class="booking__form-name" type="text" id="name" placeholder="Имя">
+            <input class="booking__form-name" type="text" id="name" placeholder="Имя" min="1" data-reg="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
             <label for="phone" class="visually-hidden">Телефон</label>
-            <input class="booking__form-phone" type="tel" id="phone" placeholder="Телефон">
-            <label for="email" class="visually-hidden">Email</label>
-            <input class="booking__form-email" type="email" id="email" placeholder="Email">
-            <label class="booking__form-label" for="data">Я согласен на обработку моих персональных данных</label>
+            <input class="booking__form-phone" type="tel" id="phone" placeholder="Телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" required>
+            <label for="email" class="visually-hidden" data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$">Email</label>
+            <input class="booking__form-email" type="email" id="email" placeholder="Email" required>
+            <label class="booking__form-label" for="data">Я согласен намобработку моих персональных данных</label>
             <input class="booking__form-data visually-hidden" type="radio" id="data" checked>
-            <button type="submit">Оставить заявку</button>
-          </div>
+            <button class="booking__form-button" type="submit">Оставить заявку</button>
+          </form>
         </div>
       </section>
       <section class="location">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787253323!2d30.3208587158923!3d59.93871648187622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2s!4v1647861375688!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         <div>
-          <p class="location__catption">У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</p>
+          <p class="location__catption">У вас ещё остались вопросы или&nbsp;сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы вам все расскажем.</p>
           <p class="location__adress">г. Санкт Петербург, ул. Большая Конюшенная, 19/8</p>
           <a class="location__phone" href="tel:+78002000000" aria-label="Телефон компании">8-800-200-00-00</a>
         </div>
       </section>
     </main>
 
-      <footer class="page-footer">
+      <footer class="page-footer" id="contacts">
         <div class="page-footer__wrapper">
           <ul class="page-footer__list-contact">
             <li class="page-footer__item-contact">
@@ -366,7 +374,7 @@
           </ul>
         </div>
       </footer>
-
-      <script src="js/main.min.js"></script>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>

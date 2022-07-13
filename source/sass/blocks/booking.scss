@@ -8,15 +8,18 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    height: 555px;
+    min-height: 555px;
+    background-position: 0 -20px;
   }
 
   @media (max-width: $tablet-width-only) {
-    height: 810px;
+    background-image: url("../img/booking-background-tablet.jpg");
+    background-position: 0 -2px;
+    min-height: 805px;
   }
 
   @media (max-width: $mobile-width-only) {
-    height: 760px;
+    min-height: 760px;
   }
 }
 
@@ -29,19 +32,20 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
-    width: 1040px;
-    padding: 50px 0 50px;
+    max-width: 1200px;
+    padding: 47px 80px 50px;
   }
 
   @media (max-width: $tablet-width-only) {
     flex-direction: column;
-    width: 430px;
-    padding: 63px 0 100px;
+    max-width: 430px;
+    padding: 86px 0 100px;
   }
 
   @media (max-width: $mobile-width-only) {
     flex-direction: column;
-    width: 290px;
+    min-width: 320px;
+    max-width: none;
     padding: 59px 0 65px;
   }
 }
@@ -56,7 +60,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    width: 257px;
+    width: 91%;
   }
 }
 
@@ -83,7 +87,7 @@
   @media (max-width: $mobile-width-only) {
     font-size: 24px;
     line-height: 130%;
-    padding: 0 0 13px;
+    padding: 0 15px 13px;
     text-align: center;
   }
 }
@@ -115,7 +119,8 @@
     line-height: 140%;
     text-align: center;
     padding: 0 0 31px;
-    width: 186px;
+    width: 91%;
+    max-width: none;
   }
 }
 
@@ -127,14 +132,14 @@
   justify-content: flex-start;
   align-items: center;
   width: 403px;
-  height: 455px;
+  min-height: 455px;
   padding: 43px 50px 50px;
   box-sizing: border-box;
   margin: 0;
 
   @media (max-width: $mobile-width-only) {
-    width: 290px;
-    height: 460px;
+    width: 91%;
+    height: fit-content;
     padding: 35px 30px 40px;
   }
 }
@@ -142,12 +147,13 @@
 .booking__form p {
   font-size: 18px;
   line-height: 150%;
-  padding: 0 0 28px;
+  padding: 0 0 23px;
   margin: 0 auto;
   text-align: start;
 
   @media (max-width: $mobile-width-only) {
     text-align: center;
+    width: 100%;
   }
 }
 
@@ -160,7 +166,7 @@
   margin: 0 auto 20px;
 
   @media (max-width: $mobile-width-only) {
-    width: 230px;
+    width: 100%;
   }
 }
 
@@ -176,7 +182,7 @@
   border: none;
 
   @media (max-width: $mobile-width-only) {
-    width: 230px;
+    width: 100%;
     height: 43px;
   }
 }
@@ -193,10 +199,11 @@
   @media (max-width: $mobile-width-only) {
     margin-left: 29px;
     margin-bottom: 24px;
+    width: 88%;
   }
 
   &::before {
-    content: url("../../img/icon-empty.png");
+    content: url("../img/icon-empty.png");
     width: 18px;
     height: 18px;
     left: -24px;
@@ -204,14 +211,14 @@
     position: absolute;
 
     @media (max-width: $mobile-width-only) {
-      left: -28px;
-      bottom: 5px;
+      left: -27px;
+      bottom: 8px;
     }
   }
 }
 
 .booking__form-data:checked + .booking__form-label::before {
-  content: url("../../img/icon-checked.png");
+  content: url("../img/icon-checked.png");
   width: 18px;
   height: 18px;
   left: -30px;
