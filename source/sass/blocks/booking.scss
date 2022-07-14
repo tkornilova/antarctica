@@ -15,7 +15,7 @@
   @media (max-width: $tablet-width-only) {
     background-image: url("../img/booking-background-tablet.jpg");
     background-position: 0 -2px;
-    min-height: 805px;
+    min-height: 802px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -33,7 +33,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
-    padding: 47px 80px 50px;
+    padding: 47px 80px 50px 77px;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -109,8 +109,8 @@
     font-size: 18px;
     line-height: 150%;
     text-align: center;
-    padding: 0 0 53px;
-    width: 320px;
+    padding: 0 0 51px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -131,7 +131,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 403px;
+  width: 407px;
   min-height: 455px;
   padding: 43px 50px 50px;
   box-sizing: border-box;
@@ -147,13 +147,14 @@
 .booking__form p {
   font-size: 18px;
   line-height: 150%;
-  padding: 0 0 23px;
+  padding: 0 0 28px;
   margin: 0 auto;
   text-align: start;
 
   @media (max-width: $mobile-width-only) {
     text-align: center;
     width: 100%;
+    padding: 0 0 22px;
   }
 }
 
@@ -192,38 +193,44 @@
   color: $white;
   font-size: 10px;
   line-height: 130%;
-  margin-left: -6px;
+  margin-left: 0;
   margin-bottom: 34px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   position: relative;
+  cursor: pointer;
 
   @media (max-width: $mobile-width-only) {
-    margin-left: 29px;
     margin-bottom: 24px;
-    width: 88%;
-  }
-
-  &::before {
-    content: url("../img/icon-empty.png");
-    width: 18px;
-    height: 18px;
-    left: -24px;
-    bottom: -3px;
-    position: absolute;
-
-    @media (max-width: $mobile-width-only) {
-      left: -27px;
-      bottom: 8px;
-    }
+    width: 100%;
   }
 }
 
-.booking__form-data:checked + .booking__form-label::before {
-  content: url("../img/icon-checked.png");
+.booking__form-data[type="checkbox"] ~ .booking__form-mark {
   width: 18px;
   height: 18px;
-  left: -30px;
-  bottom: -2px;
-  position: absolute;
+  background-image: url("../img/icon-empty.png");
+  margin-right: 5px;
+  position: relative;
+  display: inline-block;
+
+  @media (max-width: $mobile-width-only) {
+    margin-right: 16px;
+  }
+}
+
+.booking__form-data[type="checkbox"]:checked ~ .booking__form-mark {
+  width: 18px;
+  height: 18px;
+  background-image: url("../img/icon-checked.png");
+  margin-right: 5px;
+  position: relative;
+  display: inline-block;
+
+  @media (max-width: $mobile-width-only) {
+    margin-right: 16px;
+  }
 }
 
 .booking__form-name,

@@ -505,10 +505,11 @@ a {
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
 }
 
 .advantages__item svg {
-  padding-bottom: 25px;
+  position: absolute;
 }
 
 .advantages__item h3 {
@@ -598,7 +599,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 403px;
+  width: 407px;
   min-height: 455px;
   padding: 43px 50px 50px;
   -webkit-box-sizing: border-box;
@@ -609,7 +610,7 @@ body {
 .booking__form p {
   font-size: 18px;
   line-height: 150%;
-  padding: 0 0 23px;
+  padding: 0 0 28px;
   margin: 0 auto;
   text-align: start;
 }
@@ -647,27 +648,38 @@ body {
   color: #f9fbfd;
   font-size: 10px;
   line-height: 130%;
-  margin-left: -6px;
+  margin-left: 0;
   margin-bottom: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: relative;
+  cursor: pointer;
 }
 
-.booking__form-label::before {
-  content: url("../img/icon-empty.png");
+.booking__form-data[type="checkbox"] ~ .booking__form-mark {
   width: 18px;
   height: 18px;
-  left: -24px;
-  bottom: -3px;
-  position: absolute;
+  background-image: url("../img/icon-empty.png");
+  margin-right: 5px;
+  position: relative;
+  display: inline-block;
 }
 
-.booking__form-data:checked + .booking__form-label::before {
-  content: url("../img/icon-checked.png");
+.booking__form-data[type="checkbox"]:checked ~ .booking__form-mark {
   width: 18px;
   height: 18px;
-  left: -30px;
-  bottom: -2px;
-  position: absolute;
+  background-image: url("../img/icon-checked.png");
+  margin-right: 5px;
+  position: relative;
+  display: inline-block;
 }
 
 .booking__form-name,
@@ -949,9 +961,9 @@ body {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1013,6 +1025,7 @@ body {
   width: 100%;
   position: absolute;
   top: 0;
+  z-index: 10;
 }
 
 .page-header__wrapper {
@@ -1054,9 +1067,9 @@ body {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -1147,7 +1160,9 @@ body {
   background-color: #3489cb;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 0 0;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .welcome-caption__wrapper {
@@ -1172,7 +1187,7 @@ body {
 
 @media (min-width: 1024px) {
   .advantages {
-    padding: 112px 0 115px;
+    padding: 112px 0 110px;
   }
 
   .advantages h2 {
@@ -1188,8 +1203,12 @@ body {
   .advantages__item {
     width: 31%;
     min-height: 241px;
-    padding: 32px 30px 30px;
+    padding: 78px 34px 30px;
     margin: 0 5px;
+  }
+
+  .advantages__item svg {
+    top: 36px;
   }
 
   .advantages__item h3 {
@@ -1203,7 +1222,7 @@ body {
 
   .booking__wrapper {
     max-width: 1200px;
-    padding: 47px 80px 50px;
+    padding: 47px 80px 50px 77px;
   }
 
   .booking__caption {
@@ -1227,7 +1246,7 @@ body {
 
   .cruises {
     max-width: 1200px;
-    padding: 113px 34px 80px;
+    padding: 113px 34px 74px;
   }
 
   .cruises h2 {
@@ -1252,7 +1271,7 @@ body {
 
   .location {
     max-width: 1200px;
-    padding: 120px 60px 258px 20px;
+    padding: 120px 2px 258px 20px;
   }
 
   .location iframe {
@@ -1261,7 +1280,7 @@ body {
   }
 
   .location div {
-    width: 41%;
+    width: 44%;
     height: 159px;
   }
 
@@ -1274,7 +1293,7 @@ body {
   .page-footer__item-contact {
     font-size: 16px;
     line-height: 20px;
-    margin-right: 39px;
+    margin-right: 22px;
   }
 
   .page-footer__item-contact :last-child {
@@ -1302,12 +1321,12 @@ body {
   }
 
   .page-header__item {
-    padding-right: 45px;
+    padding-right: 22px;
   }
 
   .site-description {
     max-width: 1200px;
-    padding: 118px 20px 116px;
+    padding: 118px 20px 120px;
   }
 
   .site-description__wrapper {
@@ -1318,6 +1337,7 @@ body {
     font-size: 28px;
     line-height: 150%;
     padding-bottom: 23px;
+    padding-right: 5px;
     width: 469px;
   }
 
@@ -1349,12 +1369,12 @@ body {
 
 @media (max-width: 1023px) {
   .advantages {
-    padding: 89px 45px 98px;
+    padding: 89px 42px 83px;
   }
 
   .advantages h2 {
     font-size: 26px;
-    padding-bottom: 46px;
+    padding-bottom: 48px;
   }
 
   .advantages__list {
@@ -1365,21 +1385,26 @@ body {
   .advantages__item {
     width: 31%;
     min-height: 100%;
-    padding: 25px 20px 25px;
+    padding: 66px 20px 40px;
+  }
+
+  .advantages__item svg {
+    top: 24px;
   }
 
   .advantages__item h3 {
     line-height: 140%;
+    padding: 0px 39px 9px 0;
   }
 
   .advantages__item p {
-    line-height: 122%;
+    line-height: 136%;
   }
 
   .booking {
     background-image: url("../img/booking-background-tablet.jpg");
     background-position: 0 -2px;
-    min-height: 805px;
+    min-height: 802px;
   }
 
   .booking__wrapper {
@@ -1407,8 +1432,8 @@ body {
     font-size: 18px;
     line-height: 150%;
     text-align: center;
-    padding: 0 0 53px;
-    width: 320px;
+    padding: 0 0 51px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -1438,7 +1463,7 @@ body {
 
   .location {
     min-width: 678px;
-    padding: 73px 93px 247px 45px;
+    padding: 73px 51px 247px 45px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -1450,20 +1475,23 @@ body {
   }
 
   .location div {
-    width: 43%;
+    width: 47%;
     min-height: 153px;
+    padding-top: 52px;
   }
 
   .location__catption {
-    padding-bottom: 40px;
+    padding-bottom: 28px;
   }
 
   .location__adress {
     padding-left: 33px;
+    padding-right: 5px;
   }
 
   .location__phone {
     padding-left: 33px;
+    padding-right: 5px;
   }
 
   .page-footer__wrapper {
@@ -1475,7 +1503,7 @@ body {
   .page-footer__item-contact {
     font-size: 12px;
     line-height: 15px;
-    margin-right: 25px;
+    margin-right: 14px;
   }
 
   .page-footer__item-contact :last-child {
@@ -1497,12 +1525,12 @@ body {
   }
 
   .page-header__item {
-    padding-right: 33px;
+    padding-right: 13px;
   }
 
   .site-description {
     min-width: 678px;
-    padding: 90px 45px 105px;
+    padding: 93px 45px 95px;
   }
 
   .site-description__wrapper {
@@ -1512,7 +1540,7 @@ body {
   .site-description__wrapper h2 {
     font-size: 26px;
     line-height: 140%;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     width: 250px;
   }
 
@@ -1564,7 +1592,7 @@ body {
   .advantages__item {
     width: 100%;
     min-height: 250px;
-    padding: 25px 15px 25px;
+    padding: 69px 23px 25px 20px;
     margin-bottom: 30px;
   }
 
@@ -1613,6 +1641,7 @@ body {
   .booking__form p {
     text-align: center;
     width: 100%;
+    padding: 0 0 22px;
   }
 
   .booking__form input {
@@ -1625,14 +1654,16 @@ body {
   }
 
   .booking__form-label {
-    margin-left: 29px;
     margin-bottom: 24px;
-    width: 88%;
+    width: 100%;
   }
 
-  .booking__form-label::before {
-    left: -27px;
-    bottom: 8px;
+  .booking__form-data[type="checkbox"] ~ .booking__form-mark {
+    margin-right: 16px;
+  }
+
+  .booking__form-data[type="checkbox"]:checked ~ .booking__form-mark {
+    margin-right: 16px;
   }
 
   .booking__form-name,
@@ -1695,14 +1726,25 @@ body {
   }
 
   .location div {
-    width: 91%;
+    width: 94%;
     min-height: 214px;
     padding-bottom: 43px;
+    padding-top: 0;
   }
 
   .location__catption {
     width: 91%;
     padding-bottom: 28px;
+  }
+
+  .location__adress::before {
+    left: 5px;
+    top: 4px;
+  }
+
+  .location__phone::before {
+    left: 5px;
+    top: 4px;
   }
 
   .page-footer {
@@ -1929,7 +1971,7 @@ body {
 
   .site-description {
     min-width: 290px;
-    padding: 56px 15px 65px;
+    padding: 56px 5px 65px 6px;
   }
 
   .site-description__wrapper {

@@ -2,6 +2,7 @@
   width: 100%;
   position: absolute;
   top: 0;
+  z-index: 10;
 }
 
 .page-header-no-js {
@@ -126,7 +127,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -185,11 +186,11 @@
 
 .page-header__item {
   @media (min-width: $desktop-width) {
-    padding-right: 45px;
+    padding-right: 22px;
   }
 
   @media (max-width: $tablet-width-only) {
-    padding-right: 33px;
+    padding-right: 13px;
   }
 
   @media (max-width: $mobile-width-only) {
