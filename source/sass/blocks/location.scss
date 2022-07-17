@@ -1,7 +1,6 @@
 .location {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   box-sizing: border-box;
   margin: 0 auto;
@@ -9,11 +8,12 @@
   @media (min-width: $desktop-width) {
     max-width: 1200px;
     padding: 120px 2px 258px 20px;
+    align-items: flex-start;
   }
 
   @media (max-width: $tablet-width-only) {
     min-width: 678px;
-    padding: 73px 51px 247px 45px;
+    padding: 99px 51px 221px 45px;
     align-items: center;
   }
 
@@ -50,13 +50,14 @@
 
   @media (min-width: $desktop-width) {
     width: 44%;
-    height: 159px;
+    min-height: 159px;
+    padding-top: 77px;
   }
 
   @media (max-width: $tablet-width-only) {
     width: 47%;
     min-height: 153px;
-    padding-top: 52px;
+    padding-top: 0;
   }
 
   @media (max-width: $mobile-width-only) {

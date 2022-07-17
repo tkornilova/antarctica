@@ -1,22 +1,23 @@
 .welcome-caption {
   width: 100%;
-  background-image: url("../img/welcome-background.jpg");
   background-color: $dark-blue-background;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 0;
-  filter: drop-shadow(0px 4px 4px $shadow);
 
   @media (min-width: $desktop-width) {
     height: 650px;
+    background-image: url("../img/welcome-background-desktop.jpg");
   }
 
   @media (max-width: $tablet-width-only) {
     height: 638px;
+    background-image: url("../img/welcome-background-tablet.jpg");
   }
 
   @media (max-width: $mobile-width-only) {
     height: 500px;
+    background-image: url("../img/welcome-background-mobile.jpg");
   }
 }
 

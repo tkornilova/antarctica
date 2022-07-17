@@ -12,7 +12,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     background-color: $white;
-    min-width: 285px;
+    width: 89%;
     min-height: 568px;
     padding: 0;
     box-sizing: border-box;
@@ -23,25 +23,26 @@
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: transparent;
   box-sizing: border-box;
   margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
-    padding: 34px 20px;
+    padding: 39px 20px;
+    align-items: flex-start;
   }
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
     min-width: 678px;
     padding: 27px 37px 30px 50px;
+    align-items: center;
   }
 }
 
 .page-header-no-js .page-header__wrapper {
   @media (max-width: $mobile-width-only) {
-    min-width: 285px;
+    width: 89%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -70,7 +71,7 @@
 
 .page-header--opened .page-header__wrapper {
   @media (max-width: $mobile-width-only) {
-    min-width: 285px;
+    width: 89%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -83,6 +84,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 100;
   }
 }
 
@@ -98,7 +100,7 @@
   }
 }
 
-.page-header__logo {
+.page-header__link-logo {
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 38px;
@@ -116,18 +118,12 @@
   }
 }
 
-.page-header__logo:hover,
-.page-header__logo:focus {
-  transform: scale(1.1);
-  transition: 1s;
-}
-
 .page-header__list {
-  width: fit-content;
+  max-width: 1000px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   padding: 0;
   margin: 0;
@@ -187,6 +183,7 @@
 .page-header__item {
   @media (min-width: $desktop-width) {
     padding-right: 22px;
+    padding-bottom: 10px;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -218,18 +215,27 @@
     background-color: transparent;
     border: none;
     display: initial;
-    position: relative;
   }
 }
 
-.page-header-no-js .page-header__button-close::before,
-.page-header--opened .page-header__button-close::before {
+.page-header__link {
+  position: initial;
+  padding-right: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    position: relative;
+    padding: 0;
+  }
+}
+
+.page-header-no-js .page-header__link::before,
+.page-header--opened .page-header__link::before {
   @media (max-width: $mobile-width-only) {
     content: url("../../img/icon-logo-blue.svg");
     width: 42px;
     height: 22px;
     position: absolute;
-    right: 213px;
-    bottom: 3px;
+    right: -5px;
+    bottom: 6px;
   }
 }

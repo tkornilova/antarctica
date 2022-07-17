@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $tablet-width-only) {
-    padding: 90px 60px 57px;
+    padding: 90px 60px 70px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -31,7 +31,7 @@
 
   @media (max-width: $tablet-width-only) {
     font-size: 26px;
-    padding-bottom: 33px;
+    padding-bottom: 48px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -48,7 +48,13 @@
   align-items: center;
   padding: 0;
 
+  @media (max-width: $tablet-width-only) {
+    max-width: 665px;
+    margin: 0 auto;
+  }
+
   @media (max-width: $mobile-width-only) {
+    max-width: initial;
     justify-content: center;
     margin: 0;
   }

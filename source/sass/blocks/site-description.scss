@@ -2,7 +2,6 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
   box-sizing: border-box;
@@ -10,29 +9,32 @@
   @media (min-width: $desktop-width) {
     max-width: 1200px;
     padding: 118px 20px 120px;
+    align-items: flex-start;
   }
 
   @media (max-width: $tablet-width-only) {
     min-width: 678px;
     padding: 93px 45px 95px;
+    align-items: center;
   }
 
   @media (max-width: $mobile-width-only) {
     min-width: 290px;
-    padding: 56px 5px 65px 6px;
+    padding: 56px 2px 65px 9px;
   }
 }
 
 .site-description__wrapper {
-  padding: 0;
   margin: 0;
 
   @media (min-width: $desktop-width) {
     max-width: 43%;
+    padding: 57px 0 0 0;
   }
 
   @media (max-width: $tablet-width-only) {
     width: 48%;
+    padding: 0;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -68,6 +70,7 @@
     font-size: 24px;
     line-height: 140%;
     padding-bottom: 16px;
+    padding-right: 5px;
     width: 100%;
   }
 }
