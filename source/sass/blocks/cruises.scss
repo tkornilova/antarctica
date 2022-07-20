@@ -66,9 +66,34 @@
   margin: 0;
   position: relative;
 
+
   @media (min-width: $desktop-width) {
     width: 23%;
-    overflow: hidden;
+  }
+
+  @media (max-width: $tablet-width-only) {
+    min-width: 309px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    min-width: 270px;
+    margin: 0 10px 30px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+.cruises__item:hover,
+.cruises__item:focus {
+  transition: 1s;
+  z-index: 10;
+}
+
+.cruises__item-wrapper {
+  height: 386px;
+
+  @media (min-width: $desktop-width) {
+    width: 260px;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -77,11 +102,13 @@
 
   @media (max-width: $mobile-width-only) {
     width: 270px;
-    overflow: hidden;
-    margin: 0 10px 30px;
-    padding: 0;
-    box-sizing: border-box;
   }
+}
+
+.cruises__item-picture {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .cruises__item h3 {
@@ -129,18 +156,18 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    height: 386px;
+    min-height: 386px;
   }
 
   @media (max-width: $tablet-width-only) {
     width: 309px;
-    height: 386px;
+    min-height: 386px;
     padding: 29px 31px 32px 41px;
   }
 
   @media (max-width: $mobile-width-only) {
     width: 270px;
-    height: 386px;
+    min-height: 386px;
     padding: 29px 23px 32px 24px;
   }
 }

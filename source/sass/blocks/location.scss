@@ -7,13 +7,13 @@
 
   @media (min-width: $desktop-width) {
     max-width: 1200px;
-    padding: 120px 2px 258px 20px;
+    padding: 120px 2px 120px 20px;
     align-items: flex-start;
   }
 
   @media (max-width: $tablet-width-only) {
     min-width: 678px;
-    padding: 99px 51px 221px 45px;
+    padding: 99px 51px 100px 45px;
     align-items: center;
   }
 

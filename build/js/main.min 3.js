@@ -134,6 +134,9 @@ window.addEventListener('DOMContentLoaded', function () {
 var buttonOpen = document.querySelector('.page-header__button-open');
 var buttonClose = document.querySelector('.page-header__button-close');
 var pageHeader = document.querySelector('.page-header');
+var navigation = document.querySelector('.page-header__wrapper');
+var body = document.querySelector('body');
+var navLinkArray = Array.from(document.querySelectorAll('.page-header__item'));
 
 if (pageHeader.classList.contains('page-header-no-js')) {
   pageHeader.classList.remove('page-header-no-js');
@@ -142,17 +145,35 @@ if (pageHeader.classList.contains('page-header-no-js')) {
   buttonClose.classList.add('visually-hidden');
 }
 
-buttonOpen.addEventListener('click', function () {
+buttonOpen.addEventListener('click', function (evt) {
+  evt.preventDefault();
   buttonOpen.classList.add('visually-hidden');
   buttonClose.classList.remove('visually-hidden');
   pageHeader.classList.remove('page-header--closed');
   pageHeader.classList.add('page-header--opened');
+  body.style.overflow = 'hidden';
+  navigation.style.overflow = 'scroll';
+  body.classList.toggle('body-overlay');
 });
-buttonClose.addEventListener('click', function () {
+buttonClose.addEventListener('click', function (evt) {
+  evt.preventDefault();
   buttonClose.classList.add('visually-hidden');
   buttonOpen.classList.remove('visually-hidden');
   pageHeader.classList.remove('page-header--opened');
   pageHeader.classList.add('page-header--closed');
+  body.style.overflow = 'auto';
+  navigation.style.overflow = 'auto';
+  body.classList.toggle('body-overlay');
+});
+navLinkArray.forEach(function (value) {
+  value.addEventListener('click', function () {
+    buttonClose.classList.add('visually-hidden');
+    buttonOpen.classList.remove('visually-hidden');
+    pageHeader.classList.remove('page-header--opened');
+    pageHeader.classList.add('page-header--closed');
+    body.style.overflow = 'auto';
+    body.classList.toggle('body-overlay');
+  });
 });
 var form = document.querySelector('.booking__form');
 var nameInput = form.querySelector('.booking__form-name');

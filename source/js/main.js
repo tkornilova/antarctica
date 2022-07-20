@@ -96,43 +96,15 @@ navLinkArray.forEach((value) => {
 
 const form = document.querySelector('.booking__form');
 const nameInput = form.querySelector('.booking__form-name');
-const regExName = /^[а-яА-Я]|[a-zA-Z]$/;
 const phoneInput = form.querySelector('.booking__form-phone');
-const regExPhone = /[0-9]/;
 const emailInput = form.querySelector('.booking__form-email');
-const regExEmail = /^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/;
 
 form.addEventListener('submit', () => {
-  if (nameInput.value === '') {
-    nameInput.setCustomValidity('Поле не дожно быть пустым.');
-    nameInput.reportValidity();
-  } else if (nameInput.value.length <= 1) {
-    nameInput.setCustomValidity('Имя должно быть больше 1 символа.');
-    nameInput.reportValidity();
-  } else if (!nameInput.value.match(regExName)) {
-    nameInput.setCustomValidity('Поле должно содержать только буквы.');
-    nameInput.reportValidity();
-  } else {
+  if (nameInput.value !== '' && phoneInput.value !== '' && emailInput.value !== '') {
     localStorage.setItem('name', nameInput.value);
-  }
-
-  if (phoneInput.value === '') {
-    phoneInput.setCustomValidity('Поле не дожно быть пустым.');
-    phoneInput.reportValidity();
-  } else if (!phoneInput.value.match(regExPhone)) {
-    phoneInput.setCustomValidity('Поле дожно содержать только цифры.');
-    phoneInput.reportValidity();
-  } else {
     localStorage.setItem('phone', phoneInput.value);
-  }
-
-  if (emailInput.value === '') {
-    emailInput.setCustomValidity('Поле не дожно быть пустым.');
-    emailInput.reportValidity();
-  } else if (!emailInput.value.match(regExEmail)) {
-    emailInput.setCustomValidity('Поле дожно содержать @.');
-    emailInput.reportValidity();
-  } else {
     localStorage.setItem('email', emailInput.value);
+  } else {
+    form.reportValidity();
   }
 });
