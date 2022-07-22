@@ -19,9 +19,9 @@
 
         <nav class="page-header__wrapper">
           <div>
-            <a class="page-header__link" href="#" aria-label="Переход на главную страницу">
+            <a class="page-header__link" href="#" aria-label="Переход на главную страницу" tabindex="-100">
               <svg class="page-header__link-logo" width="70" height="38" role="img">
-                <use xlink:href="img/sprite.svg#logo-desktop"></use>
+                <use xlink:href="img/sprite.svg#logo"></use>
               </svg>
             </a>
             <button class="page-header__button-open  visually-hidden">
@@ -66,9 +66,9 @@
             <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
           </div>
           <picture class="site-description__picture-wrapper">
-            <source class="site-description__picture" media="(max-width: 767px)" srcset="img/main-picture-mobile.jpg">
-            <source class="site-description__picture" media="(max-width: 1023px)" srcset="img/main-picture-tablet.jpg">
-            <img class="site-description__picture" src="img/main-picture-desktop.jpg" alt="Фотография пингвинов" width="560" height="301">
+            <source class="site-description__picture" media="(max-width: 767px)" srcset="img/main-picture-mobile-1x.jpg 1x, img/main-picture-mobile-2x.jpg 2x">
+            <source class="site-description__picture" media="(max-width: 1023px)" srcset="img/main-picture-tablet-1x.jpg 1x, img/main-picture-tablet-2x.jpg 2x">
+            <img class="site-description__picture" src="img/main-picture-desktop-1x.jpg" srcset="img/main-picture-desktop-2x.jpg 2x" alt="Фотография пингвинов" width="560" height="301">
           </picture>
         </section>
         <section class="advantages" id="advantages">
@@ -94,12 +94,12 @@
         <section class="cruises" id="cruises">
           <h2>Ближайшие круизы</h2>
           <ul class="cruises__list">
-            <li class="cruises__item" tabindex = "0">
+            <li class="cruises__item" tabindex="0">
               <h3>Круиз "Астория"</h3>
               <picture class="cruises__item-wrapper">
-                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-astoria-mobile.jpg">
-                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-astoria-tablet.jpg">
-                <img class="cruises__item-picture" src="img/cruise-astoria-desktop.jpg" alt="Круиз Астория" width="309" height="386">
+                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-astoria-mobile-1x.jpg 1x, img/cruise-astoria-mobile-2x.jpg 2x">
+                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-astoria-tablet-1x.jpg 1x, img/cruise-astoria-tablet-2x.jpg 2x">
+                <img class="cruises__item-picture" src="img/cruise-astoria-desktop-1x.jpg" srcset="img/cruise-astoria-desktop-2x.jpg 2x" alt="Круиз Астория" width="309" height="386">
               </picture>
               <div class="cruises__info">
                 <h4>Круиз "Астория"</h4>
@@ -119,15 +119,15 @@
                   <h5>Цена</h5>
                   <p>от 11500 $</p>
                 </div>
-                <a href="#" aria-label="Забронировать круиз" tabindex = "0">Забронировать</a>
+                <a href="#" aria-label="Забронировать круиз" tabindex="2">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item" tabindex = "0">
+            <li class="cruises__item" tabindex="0">
               <h3>Круиз "Элайн"</h3>
               <picture class="cruises__item-wrapper">
-                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-astoria-mobile.jpg">
-                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-astoria-tablet.jpg">
-                <img class="cruises__item-picture" src="img/cruise-astoria-desktop.jpg" alt="Круиз Астория" width="309" height="386">
+                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-astoria-mobile-1x.jpg 1x, img/cruise-astoria-mobile-2x.jpg 2x">
+                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-astoria-tablet-1x.jpg 1x, img/cruise-astoria-tablet-2x.jpg 2x">
+                <img class="cruises__item-picture" src="img/cruise-astoria-desktop-1x.jpg" srcset="img/cruise-astoria-desktop-2x.jpg 2x" alt="Круиз Астория" width="309" height="386">
               </picture>
               <div class="cruises__info">
                 <h4>Круиз "Элайн"</h4>
@@ -147,15 +147,15 @@
                   <h5>Цена</h5>
                   <p>от 14500 $</p>
                 </div>
-                <a href="#" aria-label="Забронировать круиз" tabindex = "0">Забронировать</a>
+                <a href="#" aria-label="Забронировать круиз" tabindex="2">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item" tabindex = "0">
+            <li class="cruises__item" tabindex="0">
               <h3>Круиз "Атлантис"</h3>
               <picture class="cruises__item-wrapper">
-                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-atlantis-mobile.jpg">
-                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-atlantis-tablet.jpg">
-                <img class="cruises__item-picture" src="img/cruise-atlantis-desktop.jpg" alt="Круиз Атлантис" width="309" height="386">
+                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-atlantis-mobile-1x.jpg 1x, img/cruise-atlantis-mobile-2x.jpg 2x">
+                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-atlantis-tablet-1x.jpg 1x, img/cruise-atlantis-tablet-2x.jpg 2x">
+                <img class="cruises__item-picture" src="img/cruise-atlantis-desktop-1x.jpg" srcset="img/cruise-atlantis-desktop-2x.jpg 2x" alt="Круиз Атлантис" width="309" height="386">
               </picture>
               <div class="cruises__info">
                 <h4>Круиз "Атлантис"</h4>
@@ -175,15 +175,15 @@
                   <h5>Цена</h5>
                   <p>от 14500 $</p>
                 </div>
-                <a href="#" aria-label="Забронировать круиз" tabindex = "0">Забронировать</a>
+                <a href="#" aria-label="Забронировать круиз" tabindex="2">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item" tabindex = "0">
+            <li class="cruises__item" tabindex="0">
               <h3>Круиз "Одиссей"</h3>
               <picture class="cruises__item-wrapper">
-                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-odisei-mobile.jpg">
-                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-odisei-tablet.jpg">
-                <img class="cruises__item-picture" src="img/cruise-odisei-desktop.jpg" alt="Круиз Одиссей" width="309" height="386">
+                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-odisei-mobile-1x.jpg 1x, img/cruise-odisei-mobile-2x.jpg 2x">
+                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-odisei-tablet-1x.jpg 1x, img/cruise-odisei-tablet-2x.jpg 2x">
+                <img class="cruises__item-picture" src="img/cruise-odisei-desktop-1x.jpg" srcset="img/cruise-odisei-desktop-2x.jpg 2x" alt="Круиз Одиссей" width="309" height="386">
               </picture>
               <div class="cruises__info">
                 <h4>Круиз "Одиссей"</h4>
@@ -203,15 +203,15 @@
                   <h5>Цена</h5>
                   <p>от 9700 $</p>
                 </div>
-                <a href="#" aria-label="Забронировать круиз" tabindex = "0">Забронировать</a>
+                <a href="#" aria-label="Забронировать круиз" tabindex="2">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item" tabindex = "0">
+            <li class="cruises__item" tabindex="0">
               <h3>Круиз "Олимпия"</h3>
               <picture class="cruises__item-wrapper">
-                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-olimpia-mobile.jpg">
-                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-olimpia-tablet.jpg">
-                <img class="cruises__item-picture" src="img/cruise-olimpia-desktop.jpg" alt="Круиз Олимпия" width="309" height="386">
+                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-olimpia-mobile-1x.jpg 1x, img/cruise-olimpia-mobile-2x.jpg 2x">
+                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-olimpia-tablet-1x.jpg 1x, img/cruise-olimpia-tablet-2x.jpg 2x">
+                <img class="cruises__item-picture" src="img/cruise-olimpia-desktop-1x.jpg" srcset="img/cruise-olimpia-desktop-2x.jpg 2x" alt="Круиз Олимпия" width="309" height="386">
               </picture>
               <div class="cruises__info">
                 <h4>Круиз "Олимпия"</h4>
@@ -231,15 +231,15 @@
                   <h5>Цена</h5>
                   <p>от 18600 $</p>
                 </div>
-                <a href="#" aria-label="Забронировать круиз" tabindex = "0">Забронировать</a>
+                <a href="#" aria-label="Забронировать круиз" tabindex="2">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item" tabindex = "0">
+            <li class="cruises__item" tabindex="0">
               <h3>Круиз "Аврора"</h3>
               <picture class="cruises__item-wrapper">
-                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-avrora-mobile.jpg">
-                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-avrora-tablet.jpg">
-                <img class="cruises__item-picture" src="img/cruise-avrora-desktop.jpg" alt="Круиз Аврора" width="309" height="386">
+                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-avrora-mobile-1x.jpg 1x, img/cruise-avrora-mobile-2x.jpg 2x">
+                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-avrora-tablet-1x.jpg 1x, img/cruise-avrora-tablet-2x.jpg 2x">
+                <img class="cruises__item-picture" src="img/cruise-avrora-desktop-1x.jpg" srcset="img/cruise-avrora-desktop-2x.jpg 2x" alt="Круиз Аврора" width="309" height="386">
               </picture>
               <div class="cruises__info">
                 <h4>Круиз "Аврора"</h4>
@@ -259,15 +259,15 @@
                   <h5>Цена</h5>
                   <p>от 11700 $</p>
                 </div>
-                <a href="#" aria-label="Забронировать круиз" tabindex = "0">Забронировать</a>
+                <a href="#" aria-label="Забронировать круиз" tabindex="2">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item" tabindex = "0">
+            <li class="cruises__item" tabindex="0">
               <h3>Круиз "Леонор"</h3>
               <picture class="cruises__item-wrapper">
-                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-leonor-mobile.jpg">
-                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-leonor-tablet.jpg">
-                <img class="cruises__item-picture" src="img/cruise-leonor-desktop.jpg" alt="Круиз Леонор" width="309" height="386">
+                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-leonor-mobile-1x.jpg 1x, img/cruise-leonor-mobile-2x.jpg 2x">
+                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-leonor-tablet-1x.jpg 1x, img/cruise-leonor-tablet-2x.jpg 2x">
+                <img class="cruises__item-picture" src="img/cruise-leonor-desktop-1x.jpg" srcset="img/cruise-leonor-desktop-2x.jpg 2x" alt="Круиз Леонор" width="309" height="386">
               </picture>
               <div class="cruises__info">
                 <h4>Круиз "Леонор"</h4>
@@ -287,15 +287,15 @@
                   <h5>Цена</h5>
                   <p>от 12500 $</p>
                 </div>
-                <a href="#" aria-label="Забронировать круиз" tabindex = "0">Забронировать</a>
+                <a href="#" aria-label="Забронировать круиз" tabindex="2">Забронировать</a>
               </div>
             </li>
-            <li class="cruises__item" tabindex = "0">
-              <h3>Круиз "Минион-1"</h3>
+            <li class="cruises__item" tabindex="0">
+              <h3>Круиз "Минион - 1"</h3>
               <picture class="cruises__item-wrapper">
-                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-minion1-mobile.jpg">
-                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-minion1-tablet.jpg">
-                <img class="cruises__item-picture" src="img/cruise-minion1-desktop.jpg" alt="Круиз Минион-1" width="309" height="386">
+                <source class="cruises__item-picture" media="(max-width: 767px)" srcset="img/cruise-minion1-mobile-1x.jpg 1x, img/cruise-minion1-mobile-2x.jpg 2x">
+                <source class="cruises__item-picture" media="(max-width: 1023px)" srcset="img/cruise-minion1-tablet-1x.jpg 1x, img/cruise-minion1-tablet-2x.jpg 2x">
+                <img class="cruises__item-picture" src="img/cruise-minion1-desktop-1x.jpg" srcset="img/cruise-minion1-desktop-2x.jpg 2x" alt="Круиз Минион-1" width="309" height="386">
               </picture>
               <div class="cruises__info">
                 <h4>Круиз "Минион-1"</h4>
@@ -315,7 +315,7 @@
                   <h5>Цена</h5>
                   <p>от 12300 $</p>
                 </div>
-                <a href="#" aria-label="Забронировать круиз" tabindex = "0">Забронировать</a>
+                <a href="#" aria-label="Забронировать круиз" tabindex="2">Забронировать</a>
               </div>
             </li>
           </ul>
@@ -329,7 +329,7 @@
             <form class="booking__form" method="post" action="https://echo.htmlacademy.ru">
               <p>Оставьте заявку и&nbsp;мы свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
               <label for="name" class="visually-hidden">Имя</label>
-              <input class="booking__form-name" type="text" id="name" placeholder="Имя" min="1" pattern="^[А-Яа-яЁё\s]+$" required>
+              <input class="booking__form-name" type="text" id="name" placeholder="Имя" minlength="1" pattern="^[А-Яа-яЁё\s]+$" required>
               <label for="phone" class="visually-hidden">Телефон</label>
               <input class="booking__form-phone" type="tel" id="phone" placeholder="Телефон" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
               <label for="email" class="visually-hidden">Email</label>
@@ -357,7 +357,7 @@
           <div class="page-footer__wrapper">
             <div class="page-footer__container">
               <a href="#" aria-label="Переход на главную страницу">
-                <img class="page-footer__logo" src="img/sprite/icon-logo-desktop.svg" alt="Логотип" width="70" height="38">
+                <img class="page-footer__logo" src="img/sprite/icon-logo.svg" alt="Логотип" width="70" height="38">
               </a>
               <ul class="page-footer__list-contact">
                 <li class="page-footer__item-contact">

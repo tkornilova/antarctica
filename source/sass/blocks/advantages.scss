@@ -1,18 +1,22 @@
 .advantages {
   width: 100%;
-  background-image: url("../img/advantages-background.jpg");
+  background-image: url("../img/advantages-background-1x.jpg");
   background-color: $light-blue-background;
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
   margin: 0 auto;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/advantages-background-2x.jpg");
+  }
+
   @media (min-width: $desktop-width) {
     padding: 112px 0 120px;
   }
 
   @media (max-width: $tablet-width-only) {
-    padding: 89px 43px 99px 47px;
+    padding: 89px 41px 104px 49px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -34,7 +38,7 @@
 
   @media (max-width: $tablet-width-only) {
     font-size: 26px;
-    padding-bottom: 48px;
+    padding-bottom: 50px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -133,49 +137,46 @@
 
 .advantages__item:first-child h3::before {
   position: absolute;
-
   content: url("../img/icon-ship-desktop.png");
   width: 27px;
   height: 32px;
-  bottom: 61px;
+  top: -53px;
 
   @media (max-width: $tablet-width-only) {
     content: url("../img/icon-ship-mobile.png");
     width: 21px;
     height: 27px;
-    bottom: 73px;
+    top: -46px;
   }
 }
 
 .advantages__item:nth-child(2) h3::before {
   position: absolute;
-
   content: url("../img/icon-checked-desktop.png");
   width: 38px;
   height: 21px;
-  bottom: 50px;
+  top: -47px;
+  left: 5px;
 
   @media (max-width: $tablet-width-only) {
     content: url("../img/icon-checked-mobile.png");
     width: 33px;
     height: 19px;
-    bottom: 82px;
   }
 }
 
 .advantages__item:nth-child(3) h3::before {
   position: absolute;
-
   content: url("../img/icon-yacht-desktop.png");
   width: 42px;
   height: 15px;
-  bottom: 53px;
+  top: -45px;
+  left: 7px;
 
   @media (max-width: $tablet-width-only) {
     content: url("../img/icon-yacht-mobile.png");
     width: 38px;
     height: 13px;
-    bottom: 87px;
   }
 }
 

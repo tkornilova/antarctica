@@ -14,31 +14,49 @@
   @media (max-width: $tablet-width-only) {
     min-width: 678px;
     padding: 99px 51px 100px 45px;
-    align-items: center;
   }
 
   @media (max-width: $mobile-width-only) {
     min-width: 290px;
     flex-direction: column;
-    padding: 56px 0 59px;
+    padding: 56px 0 63px;
   }
 }
 
 .location iframe {
+  background-repeat: no-repeat;
+  background-size: cover;
+
   @media (min-width: $desktop-width) {
     width: 48%;
     height: 306px;
+    background-image: url("../img/location-map-desktop-1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-map-desktop-2x.jpg");
+    }
   }
 
   @media (max-width: $tablet-width-only) {
     width: 48%;
     height: 335px;
+    background-image: url("../img/location-map-tablet-1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-map-tablet-2x.jpg");
+    }
   }
 
   @media (max-width: $mobile-width-only) {
     width: 91%;
     height: 316px;
     order: 2;
+    margin: 0 12px;
+    background-image: url("../img/location-map-mobile-1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/location-map-mobile-2x.jpg");
+    }
   }
 }
 
@@ -51,20 +69,20 @@
   @media (min-width: $desktop-width) {
     width: 44%;
     min-height: 159px;
-    padding-top: 77px;
+    padding-top: 72px;
   }
 
   @media (max-width: $tablet-width-only) {
     width: 47%;
     min-height: 153px;
-    padding-top: 0;
+    padding-top: 66px;
+    justify-content: flex-start;
   }
 
   @media (max-width: $mobile-width-only) {
     width: 94%;
     min-height: 214px;
-    padding-bottom: 43px;
-    padding-top: 0;
+    padding: 0 0 16px 14px;
   }
 }
 
@@ -73,7 +91,7 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 150%;
-  padding-bottom: 24px;
+  padding-bottom: 32px;
   margin: 0;
 
   @media (max-width: $tablet-width-only) {
@@ -97,8 +115,13 @@
   position: relative;
 
   @media (max-width: $tablet-width-only) {
-    padding-left: 33px;
+    padding-left: 30px;
     padding-right: 5px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 29px;
+    padding-right: 10px;
   }
 }
 
@@ -111,8 +134,13 @@
   position: absolute;
   left: 0;
 
+  @media (max-width: $tablet-width-only) {
+    left: 2px;
+    top: 4px;
+  }
+
   @media (max-width: $mobile-width-only) {
-    left: 5px;
+    left: 2px;
     top: 4px;
   }
 }
@@ -122,12 +150,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-  padding-left: 25px;
+  padding-left: 28px;
+  padding-bottom: 21px;
   margin: 0;
   position: relative;
 
   @media (max-width: $tablet-width-only) {
-    padding-left: 33px;
+    padding-left: 30px;
     padding-right: 5px;
   }
 }
@@ -141,8 +170,13 @@
   position: absolute;
   left: 0;
 
-  @media (max-width: $mobile-width-only) {
-    left: 5px;
+  @media (max-width: $tablet-width-only) {
+    left: 2px;
     top: 4px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    left: 1px;
+    top: 2px;
   }
 }

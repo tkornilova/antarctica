@@ -9,7 +9,7 @@
   }
 
   @media (max-width: $tablet-width-only) {
-    padding: 90px 60px 70px;
+    padding: 90px 56px 70px 64px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -31,7 +31,7 @@
 
   @media (max-width: $tablet-width-only) {
     font-size: 26px;
-    padding-bottom: 48px;
+    padding-bottom: 50px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -126,8 +126,8 @@
   }
 
   @media (max-width: $tablet-width-only) {
-    bottom: 56px;
-    left: 41px;
+    bottom: 58px;
+    left: 35px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -141,7 +141,7 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .cruises__info {
@@ -150,7 +150,7 @@
   color: $white;
   text-align: start;
   top: 0;
-  padding: 35px 25px 35px;
+  padding: 30px 25px 35px;
   box-sizing: border-box;
   margin: 0;
 
@@ -162,7 +162,7 @@
   @media (max-width: $tablet-width-only) {
     width: 309px;
     min-height: 386px;
-    padding: 29px 31px 32px 41px;
+    padding: 29px 29px 34px 35px;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -184,7 +184,7 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 140%;
-  padding: 0 0 5px;
+  padding: 0 0 4px;
   margin: 0;
 }
 
@@ -192,7 +192,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 140%;
-  padding: 0 0 10px;
+  padding: 0 0 9px;
   margin: 0;
 }
 
@@ -208,7 +208,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  margin: 0 auto;
+  margin: 14px auto 0;
   -webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;

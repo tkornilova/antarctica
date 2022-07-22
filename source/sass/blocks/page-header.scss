@@ -17,6 +17,7 @@
     padding: 0;
     box-sizing: border-box;
     position: initial;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -42,16 +43,17 @@
 
 .page-header-no-js .page-header__wrapper {
   @media (max-width: $mobile-width-only) {
-    width: 89%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
     background-color: $white;
     min-height: 568px;
-    padding: 20px 15px 20px;
+    padding: 19px 9px 19px 11px;
     margin-right: 0;
     box-sizing: border-box;
+    margin: 0 0 0 auto;
   }
 }
 
@@ -62,7 +64,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 17px 13px 20px;
+    padding: 18px 8px 20px 16px;
     position: absolute;
     top: 0;
     right: 0;
@@ -96,7 +98,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 33px;
+    padding-bottom: 36px;
   }
 }
 
@@ -104,7 +106,7 @@
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 38px;
-    padding-right: 10px;
+    margin-right: 10px;
   }
 
   @media (max-width: $tablet-width-only) {
@@ -220,18 +222,18 @@
 
 .page-header__link {
   position: initial;
-  padding-right: 20px;
+  margin-right: 20px;
 
   @media (max-width: $mobile-width-only) {
     position: relative;
-    padding: 0;
+    margin: 0;
   }
 }
 
 .page-header-no-js .page-header__link::before,
 .page-header--opened .page-header__link::before {
   @media (max-width: $mobile-width-only) {
-    content: url("../../img/icon-logo-blue.svg");
+    content: url("../img/icon-logo-blue.svg");
     width: 42px;
     height: 22px;
     position: absolute;
