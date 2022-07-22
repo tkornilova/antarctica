@@ -481,6 +481,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -505,14 +507,14 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
   background-color: #f9fbfd;
-  margin: 0 auto;
+  margin: 0 5px 10px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: relative;
@@ -522,7 +524,6 @@ a {
   color: #011c40;
   font-weight: 500;
   font-size: 18px;
-  padding: 0;
   margin: 0;
   position: relative;
 }
@@ -1296,7 +1297,7 @@ body {
 
 @media (min-width: 1024px) {
   .advantages {
-    padding: 112px 0 120px;
+    padding: 112px 0 113px;
   }
 
   .advantages h2 {
@@ -1313,12 +1314,12 @@ body {
   .advantages__item {
     width: 31%;
     min-height: 241px;
-    padding: 73px 27px 21px 25px;
-    margin: 0 5px;
+    padding: 84px 34px 21px 29px;
   }
 
   .advantages__item h3 {
     line-height: 150%;
+    padding: 0 0 8px 0;
   }
 
   .booking {
@@ -1535,7 +1536,7 @@ body {
 
 @media (max-width: 1023px) {
   .advantages {
-    padding: 89px 41px 104px 49px;
+    padding: 89px 41px 91px 49px;
   }
 
   .advantages h2 {
@@ -1551,13 +1552,12 @@ body {
   .advantages__item {
     width: 31%;
     min-height: 100%;
-    padding: 70px 20px 33px;
-    margin: 0;
+    padding: 70px 20px 26px;
   }
 
   .advantages__item h3 {
     line-height: 140%;
-    padding: 0px 39px 0 0;
+    padding: 0px 39px 11px 0;
   }
 
   .advantages__item:first-child h3::before {
@@ -1835,7 +1835,7 @@ body {
 
 @media (max-width: 767px) {
   .advantages {
-    padding: 58px 15px 33px;
+    padding: 58px 19px 33px 11px;
   }
 
   .advantages h2 {
@@ -1858,7 +1858,7 @@ body {
   .advantages__item {
     width: 100%;
     min-height: 250px;
-    padding: 59px 24px 8px 17px;
+    padding: 68px 23px 8px 20px;
     margin-bottom: 30px;
   }
 

@@ -12,15 +12,15 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 112px 0 120px;
+    padding: 112px 0 113px;
   }
 
   @media (max-width: $tablet-width-only) {
-    padding: 89px 41px 104px 49px;
+    padding: 89px 41px 91px 49px;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 58px 15px 33px;
+    padding: 58px 19px 33px 11px;
   }
 }
 
@@ -73,6 +73,7 @@
   max-width: 1160px;
   min-height: 241px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
@@ -88,31 +89,29 @@
 .advantages__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: flex-start;
   background-color: $white;
-  margin: 0 auto;
+  margin: 0 5px 10px;
   box-sizing: border-box;
   position: relative;
 
   @media (min-width: $desktop-width) {
     width: 31%;
     min-height: 241px;
-    padding:73px 27px 21px 25px;
-    margin: 0 5px;
+    padding: 84px 34px 21px 29px;
   }
 
   @media (max-width: $tablet-width-only) {
     width: 31%;
     min-height: 100%;
-    padding: 70px 20px 33px;
-    margin: 0;
+    padding: 70px 20px 26px;
   }
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
     min-height: 250px;
-    padding: 59px 24px 8px 17px;
+    padding: 68px 23px 8px 20px;
     margin-bottom: 30px;
   }
 }
@@ -121,17 +120,17 @@
   color: $main-blue;
   font-weight: 500;
   font-size: 18px;
-  padding: 0;
   margin: 0;
   position: relative;
 
   @media (min-width: $desktop-width) {
     line-height: 150%;
+    padding: 0 0 8px 0;
   }
 
   @media (max-width: $tablet-width-only) {
     line-height: 140%;
-    padding: 0px 39px 0 0;
+    padding: 0px 39px 11px 0;
   }
 }
 
