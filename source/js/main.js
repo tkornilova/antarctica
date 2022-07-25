@@ -61,7 +61,7 @@ if (pageHeader.classList.contains('page-header-no-js')) {
   buttonClose.classList.add('visually-hidden');
 }
 
-buttonOpen.addEventListener('click', function (evt) {
+buttonOpen.addEventListener('click', (evt) => {
   evt.preventDefault();
   buttonOpen.classList.add('visually-hidden');
   buttonClose.classList.remove('visually-hidden');
@@ -72,7 +72,7 @@ buttonOpen.addEventListener('click', function (evt) {
   body.classList.toggle('body-overlay');
 });
 
-buttonClose.addEventListener('click', function (evt) {
+buttonClose.addEventListener('click', (evt) => {
   evt.preventDefault();
   buttonClose.classList.add('visually-hidden');
   buttonOpen.classList.remove('visually-hidden');
@@ -94,10 +94,21 @@ navLinkArray.forEach((value) => {
   });
 });
 
+document.addEventListener('click', (evt) => {
+  if (evt.target.classList.contains('page-header--opened')) {
+    buttonClose.classList.add('visually-hidden');
+    buttonOpen.classList.remove('visually-hidden');
+    pageHeader.classList.remove('page-header--opened');
+    pageHeader.classList.add('page-header--closed');
+    body.style.overflow = 'auto';
+    body.classList.toggle('body-overlay');
+  }
+});
+
 const form = document.querySelector('.booking__form');
 const nameInput = form.querySelector('.booking__form-name');
 const phoneInput = form.querySelector('.booking__form-phone');
-const emailInput = form.querySelector('.booking__form-email');
+const emailInput = form.querySelectorAll('.booking__form-email');
 
 form.addEventListener('submit', () => {
   if (nameInput.value !== '' && phoneInput.value !== '' && emailInput.value !== '') {
@@ -107,4 +118,15 @@ form.addEventListener('submit', () => {
   } else {
     form.reportValidity();
   }
+});
+
+const cruisesItem = document.querySelectorAll('.cruises__item');
+const cruisesLink = document.querySelector('.cruises__info-link');
+
+cruisesItem.forEach((value) => {
+  value.addEventListener('click', () => {
+    cruisesLink.forEach((link) => {
+      link.focus();
+    });
+  });
 });

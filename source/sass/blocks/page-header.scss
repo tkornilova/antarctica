@@ -3,6 +3,10 @@
   position: absolute;
   top: 0;
   z-index: 10;
+
+  @media (max-width: $mobile-width-only) {
+    height: 100%;
+  }
 }
 
 .page-header-no-js {
@@ -79,7 +83,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     background-color: $white;
-    min-height: 568px;
+    height: 100%;
     padding: 20px 11px 20px;
     margin-right: 0;
     box-sizing: border-box;
@@ -103,6 +107,8 @@
 }
 
 .page-header__link-logo {
+  cursor: initial;
+
   @media (min-width: $desktop-width) {
     width: 70px;
     height: 38px;
