@@ -22,7 +22,7 @@ body {
   display: none;
 
   @media (max-width: $mobile-width-only) {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 100%;
@@ -31,7 +31,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0,0,0,0.5);
+    background-color: $overlay;
     z-index: 2;
   }
 }

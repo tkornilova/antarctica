@@ -385,7 +385,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/montserrat-400.woff2") format("woff2"), url("../fonts/montserrat-400.woff") format("woff");
   font-weight: 400;
   font-style: normal;
@@ -393,7 +393,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/montserrat-500.woff2") format("woff2"), url("../fonts/montserrat-500.woff") format("woff");
   font-weight: 500;
   font-style: normal;
@@ -401,7 +401,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/montserrat-600.woff2") format("woff2"), url("../fonts/montserrat-600.woff") format("woff");
   font-weight: 600;
   font-style: normal;
@@ -409,7 +409,7 @@ template {
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   src: url("../fonts/montserrat-700.woff2") format("woff2"), url("../fonts/montserrat-700.woff") format("woff");
   font-weight: 700;
   font-style: normal;
@@ -697,7 +697,6 @@ body {
   border: none;
   background-color: #f9fbfd;
   cursor: pointer;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -837,7 +836,8 @@ body {
 }
 
 .cruises__item:hover .cruises__info,
-.cruises__item:focus .cruises__info {
+.cruises__item:focus .cruises__info,
+.cruises__item:focus-within .cruises__info {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -861,7 +861,7 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 .cruises__info h4 {
@@ -888,7 +888,7 @@ body {
   margin: 0;
 }
 
-.cruises__info a {
+.cruises__info-link {
   width: 97%;
   height: 40px;
   color: #011c40;
@@ -908,16 +908,15 @@ body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 14px auto 0;
-  -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
 
-.cruises__info a:hover,
-.cruises__info a:focus,
-.cruises__info a:active {
+.cruises__item:hover .cruises__info-link:hover,
+.cruises__item:focus .cruises__info-link:focus,
+.cruises__item:focus-within .cruises__info-link:active {
   color: #f9fbfd;
   background-color: #011c40;
   border: 1px solid #f9fbfd;
@@ -1456,7 +1455,7 @@ body {
   }
 
   .item-social__twitter {
-    mwidth: 20px;
+    width: 20px;
     height: 16px;
   }
 
@@ -1570,7 +1569,7 @@ body {
 
   .advantages__item h3 {
     line-height: 140%;
-    padding: 0px 39px 11px 0;
+    padding: 0 39px 11px 0;
   }
 
   .advantages__item-picture-wrapper {
@@ -1876,7 +1875,7 @@ body {
   }
 
   .body-overlay::before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 100%;
@@ -2158,7 +2157,6 @@ body {
     background-color: #f9fbfd;
     min-height: 568px;
     padding: 19px 9px 19px 11px;
-    margin-right: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 0 0 auto;
@@ -2364,7 +2362,7 @@ body {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .cruises__info a {
+  .cruises__info-link {
     width: 239px;
   }
 
