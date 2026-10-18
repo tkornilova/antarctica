@@ -1,0 +1,51 @@
+.booking {
+  background-image: url("../../../assets/images/booking-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 450px));
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+
+    padding: 0 50px;
+
+    @media (max-width: 1024px) {
+      grid-template-columns: 1fr;
+      justify-content: center;
+
+      padding: 0 45px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 20px;
+    }
+  }
+
+  &__wrapper {
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
+  }
+
+  .title {
+    margin: 0 0 30px;
+
+    text-align: left;
+
+    @media (max-width: 1024px) {
+      text-align: center;
+    }
+  }
+
+  .form {
+    @media (max-width: 1024px) {
+      justify-self: center;
+
+      max-inline-size: 455px;
+    }
+  }
+}

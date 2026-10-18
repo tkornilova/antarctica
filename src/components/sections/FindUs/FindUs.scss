@@ -1,0 +1,43 @@
+.find-us {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+
+    @media (max-width: 1024px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (max-width: 768px) {
+      grid-row: 1/2;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__address,
+  &__phone {
+    font-style: initial;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,13 @@
+#root {
+  min-block-size: 100vh;
+}
+
+#root,
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  inline-size: 100%;
+}

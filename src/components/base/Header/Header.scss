@@ -1,0 +1,147 @@
+.header {
+  position: absolute;
+
+  padding: 30px 0;
+
+  color: var(--white);
+
+  @media (max-width: 320px) {
+    padding: 20px 0;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__logo {
+    block-size: 41px;
+    inline-size: 75px;
+
+    @media (max-width: 768px) {
+      block-size: 31px;
+      inline-size: 58px;
+    }
+
+    & svg {
+      block-size: 100%;
+    }
+  }
+
+  &__nav {
+    display: flex;
+
+    &--open .header__list {
+      display: flex;
+      transform: translateY(0);
+    }
+
+    &--open .header__button span {
+      color: var(--blue-main);
+
+      &:nth-child(1) {
+        transform: translateY(11px) rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+      }
+
+      &:nth-child(3) {
+        transform: translateY(-11px) rotate(-45deg);
+      }
+    }
+  }
+
+  &__button {
+    position: relative;
+
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: 0;
+
+    border: none;
+    color: var(--white);
+    background-color: transparent;
+    cursor: pointer;
+
+    inline-size: 34px;
+    block-size: 24px;
+
+    @media (max-width: 768px) {
+      z-index: 10;
+
+      display: flex;
+    }
+
+    & span {
+      display: flex;
+
+      background-color: currentColor;
+      transform-origin: center;
+
+      transition:
+        transform var(--transition),
+        color var(--transition);
+
+      inline-size: 100%;
+      block-size: 2px;
+    }
+
+    &:hover span,
+    &:focus-visible span {
+      color: var(--red);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 33px;
+
+    transition: transform var(--transition);
+
+    @media (max-width: 1024px) {
+      gap: 23px;
+    }
+
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 100px;
+
+      z-index: 5;
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 15px;
+
+      padding: 100px 15px 40px;
+
+      background-color: var(--white);
+      transform: translateY(-150%);
+    }
+  }
+
+  &__link {
+    color: var(--white);
+    font-size: 16px;
+
+    @media (max-width: 1024px) {
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      color: var(--blue-main);
+    }
+  }
+}

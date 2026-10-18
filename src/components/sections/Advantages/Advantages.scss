@@ -1,0 +1,35 @@
+.advantages {
+  background-color: var(--blue-light-bg);
+  background-image: url("../../../assets/images/advantages-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    padding: 30px;
+
+    background-color: var(--white);
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    block-size: 32px;
+  }
+}

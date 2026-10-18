@@ -1,0 +1,55 @@
+.footer {
+  margin: auto auto 0;
+  padding: 50px 0;
+
+  background-color: var(--blue-main);
+
+  @media (max-width: 768px) {
+    padding: 40px 0;
+  }
+
+  & .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    max-inline-size: 40%;
+
+    @media (max-width: 768px) {
+      max-inline-size: 50%;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    transition: background-color var(--transition);
+
+    inline-size: 36px;
+    block-size: 36px;
+
+    &:hover,
+    &:focus-visible {
+      background-color: var(--white);
+
+      & svg {
+        fill: var(--blue-main);
+      }
+    }
+
+    & svg {
+      fill: var(--white);
+      transition: fill var(--transition);
+    }
+  }
+}

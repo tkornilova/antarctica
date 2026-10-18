@@ -1,0 +1,67 @@
+.welcome {
+  color: var(--white);
+
+  background-image: url("../../../assets/images/welcome-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center 70%;
+  background-size: cover;
+
+  min-block-size: 683px;
+
+  @media (max-width: 768px) {
+    min-block-size: 500px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding: 0 95px;
+
+    block-size: 100%;
+
+    @media (max-width: 1024px) {
+      padding: 0 45px;
+    }
+
+    @media (max-width: 768px) {
+      padding: 0 15px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px;
+
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 100%;
+    text-align: left;
+
+    @media (max-width: 1024px) {
+      margin: 0 0 25px;
+
+      font-size: 50px;
+    }
+
+    @media (max-width: 768px) {
+      margin: 0 0 20px;
+
+      font-size: 36px;
+    }
+  }
+
+  &__text {
+    font-size: 20px;
+    line-height: 100%;
+
+    @media (max-width: 1024px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+}
